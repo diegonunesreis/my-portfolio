@@ -1,0 +1,14 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+
+  /* Para telas menores que 768px, ajuste a largura do contêiner */
+  .container {
+    width: 100%;
+  }
+}
