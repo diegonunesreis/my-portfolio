@@ -10,18 +10,30 @@ const Navbar = () => {
         <li><a href='#'>&lt;/&gt; diegonunes.dev</a></li>
       </ul>
       <ul className={styles.social}>
-        <li><a href='#'>
+        <li><a href='mailto:diegonunesreis@outlook.com'>
           <FontAwesomeIcon icon="fa-regular fa-envelope" alt='email' />
         </a></li>
-        <li><a href='#'>
-          <FontAwesomeIcon icon="fa-brands fa-hashnode" alt='hashnode' />
-        </a></li>
-        <li><a href='#'>
-          <FontAwesomeIcon icon="fa-brands fa-github" />
-        </a></li>
-        <li><a href='#'>
-          <FontAwesomeIcon icon="fa-brands fa-linkedin-in" />
-        </a></li>
+        <li>
+          <a href='https://blog.diegonunes.dev/'
+            target='_blank'
+            rel='noreferrer'>
+            <FontAwesomeIcon icon="fa-brands fa-hashnode" alt='hashnode' />
+          </a>
+        </li>
+        <li>
+          <a href='https://github.com/diegonunesreis'
+            target='_blank'
+            rel='noreferrer'>
+            <FontAwesomeIcon icon="fa-brands fa-github" />
+          </a>
+        </li>
+        <li>
+          <a href='https://www.linkedin.com/in/diegonunesreis/'
+            target='_blank'
+            rel='noreferrer'>
+            <FontAwesomeIcon icon="fa-brands fa-linkedin-in" />
+          </a>
+        </li>
       </ul>
     </nav>
   )

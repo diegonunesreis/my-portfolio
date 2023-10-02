@@ -4,7 +4,7 @@ import styles from './Main.module.css';
 import { useRef } from 'react';
 import Typed from 'typed.js';
 
-const Main = () => {
+const Main = (props) => {
   const tw = useRef(null);
 
   React.useEffect(() => {
@@ -19,7 +19,6 @@ const Main = () => {
       backSpeed: 50,
       backDelay: 2000,
       loop: true
-      
     });
 
     return () => {
@@ -35,7 +34,7 @@ const Main = () => {
         <div className={styles['type-writer']}>
           <span ref={tw}></span>
         </div>
-        <a href='#'><FontAwesomeIcon className={styles.main__arrow} icon="fa-solid fa-chevron-down" /></a>
+        <a onClick={props.scrollNext}><FontAwesomeIcon className={`scroll-chevron ${styles.main__arrow}`} icon="fa-solid fa-chevron-down" /></a>
       </div>
     </section>
   )

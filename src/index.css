@@ -5,6 +5,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--dark-bg-color);
+  scroll-behavior: smooth; 
+
 }
 
 code {
@@ -19,4 +21,14 @@ a {
 
 a:hover {
   color: var(--details-font-color)
+}
+
+p {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.scroll-chevron {
+  font-size: 40px;
+  cursor:pointer;
 }
