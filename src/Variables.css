@@ -1,8 +1,7 @@
 :root {
   --dark-bg-color: #0E141B;
-
-  --primary-font-color: #FFFFFF;
-  --secondary-font-color: #FF5277;
-  --details-font-color: #0CCE6B;
-  --dark-font-color: #252526;
+  --primary-color: #FFFFFF;
+  --secondary-color: #FF5277;
+  --details-color: #0CCE6B;
+  --details-dark-color: #252526;
 }

@@ -1,0 +1,22 @@
+.experience__container {
+  margin: 0 2rem;
+}
+
+.experience__title {
+  margin: 0 0 8px 0;
+}
+
+.experience__company {
+  font-size: 1.5rem;
+  color: var(--details-color);
+  font-weight: bold;
+  margin: 0;
+}
+
+.experience__company:hover {
+  color: var(--secondary-color)
+}
+
+.experience__description {
+  text-align: justify;
+}
