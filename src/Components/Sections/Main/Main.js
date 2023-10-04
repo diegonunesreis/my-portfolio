@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './Main.module.css';
 import { useRef } from 'react';
 import Typed from 'typed.js';
+import ScrollArrow from '../../UI/ScrollArrow/ScrollArrow';
 
 const Main = (props) => {
   const tw = useRef(null);
@@ -34,7 +35,7 @@ const Main = (props) => {
         <div className={styles['type-writer']}>
           <span ref={tw}></span>
         </div>
-        <a onClick={props.scrollNext}><FontAwesomeIcon className={`scroll-chevron ${styles.main__arrow}`} icon="fa-solid fa-chevron-down" /></a>
+        <ScrollArrow className={styles.main__arrow} onClick={props.scrollNext} animate />
       </div>
     </section>
   )

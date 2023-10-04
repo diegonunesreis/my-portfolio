@@ -1,9 +1,9 @@
-import { useEffect, useRef } from 'react';
 import Experience from './Experience/Experience';
 import styles from './Experiences.module.css';
 import { Timeline } from 'rsuite';
+import ScrollArrow from '../../UI/ScrollArrow/ScrollArrow';
 
-const Experiences = () => {
+const Experiences = (props) => {
 
   const experiences = [
     {
@@ -63,6 +63,7 @@ const Experiences = () => {
           }
         </Timeline>
       </div>
+      <ScrollArrow className={styles.main__arrow} onClick={props.scrollNext} animate />
     </section>
   )
 }
