@@ -6,6 +6,7 @@ import Main from './Components/Sections/Main/Main';
 import About from './Components/Sections/About/About';
 import Experiences from './Components/Sections/Experiences/Experiences';
 import 'rsuite/dist/rsuite-no-reset.min.css';
+import Posts from './Components/Sections/Posts/Posts';
 
 function App() {
   const scrollTo = (section) => {
@@ -19,7 +20,8 @@ function App() {
       <Container>
         <Main scrollNext={() => scrollTo('about')} />
         <About scrollNext={() => scrollTo('experiences')} />
-        <Experiences />
+        <Experiences scrollNext={() => scrollTo('posts')} />
+        <Posts />
       </Container>
     </div>
   );

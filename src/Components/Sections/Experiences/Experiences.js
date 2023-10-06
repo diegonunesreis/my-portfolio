@@ -63,7 +63,7 @@ const Experiences = (props) => {
           }
         </Timeline>
       </div>
-      <ScrollArrow className={styles.main__arrow} onClick={props.scrollNext} animate />
+      <ScrollArrow className={styles.main__arrow} onClick={props.scrollNext} />
     </section>
   )
 }
