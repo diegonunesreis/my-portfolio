@@ -1,7 +1,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  margin: 48px 4rem;
+  margin: 3rem 0;
 }
 
 .nav ul {
@@ -19,5 +19,19 @@
 }
 
 .social a {
-  font-size: 30px;
+  font-size: 1.875rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    margin: 3rem 0;
+  }
+
+  .nav .tabs {
+    font-size: 1.25rem;
+  }
+
+  .social a {
+    font-size: 1.25rem;
+  }
 }

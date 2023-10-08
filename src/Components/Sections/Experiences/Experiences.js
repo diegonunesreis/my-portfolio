@@ -2,6 +2,7 @@ import Experience from './Experience/Experience';
 import styles from './Experiences.module.css';
 import { Timeline } from 'rsuite';
 import ScrollArrow from '../../UI/ScrollArrow/ScrollArrow';
+import { useEffect, useState } from 'react';
 
 const Experiences = (props) => {
 
@@ -44,11 +45,29 @@ const Experiences = (props) => {
     }
   ]
 
+  const [highResolution, setHighResolution] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(min-width: 1024px)');
+
+    const checkResolution = () => {
+      setHighResolution(mediaQuery.matches);
+    };
+    checkResolution();
+
+    mediaQuery.addEventListener('change', checkResolution);
+    return () => {
+      mediaQuery.removeEventListener('change', checkResolution);
+    };
+  }, []);
+
+  const aligment = highResolution ? 'alternate' : 'left';
+
   return (
     <section id='experiences'>
       <h2 className={styles.experiences__title}>experiências</h2>
       <div className={styles.experiences__frame}>
-        <Timeline align='alternate'>
+        <Timeline align={aligment}>
           {
             experiences.map((xp, index) => {
               return (

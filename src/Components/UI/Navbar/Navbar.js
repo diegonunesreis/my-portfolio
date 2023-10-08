@@ -7,7 +7,6 @@ const Navbar = () => {
     <nav className={styles.nav}>
       <ul className={styles.tabs}>
         <li><a href='#'>&lt;/&gt; nunes</a></li>
-        <li><a href='#'>&lt;/&gt; diegonunes.dev</a></li>
       </ul>
       <ul className={styles.social}>
         <li><a href='mailto:diegonunesreis@outlook.com'>

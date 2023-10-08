@@ -35,6 +35,11 @@ h4 {
   color: var(--secondary-color);
 }
 
+h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
 h2 {
   font-size: 1.88rem;
 }
@@ -55,4 +60,38 @@ h3 {
 
 .rs-timeline-item-dot::before {
   transform: scale(2.6);
+}
+
+@media only screen and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  p {
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .scroll-chevron {
+    font-size: 24px;
+    cursor: pointer;
+  }
 }

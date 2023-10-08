@@ -20,3 +20,14 @@
 .experience__description {
   text-align: justify;
 }
+
+@media only screen and (max-width: 768px) {
+
+  .experience__title {
+    margin: 0 0 4px 0;
+  }
+
+  .experience__company {
+    font-size: 1rem;
+  }
+}

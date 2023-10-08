@@ -17,12 +17,12 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
       <Container>
+        <Navbar />
         <Main scrollNext={() => scrollTo('about')} />
         <About scrollNext={() => scrollTo('experiences')} />
         <Experiences scrollNext={() => scrollTo('posts')} />
-        <Posts scrollNext={() => scrollTo('projects')}/>
+        <Posts scrollNext={() => scrollTo('projects')} />
         <Projects />
       </Container>
     </div>

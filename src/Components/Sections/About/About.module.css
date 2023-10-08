@@ -22,3 +22,24 @@
   margin: 0 auto;
   display: block;
 }
+
+@media only screen and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about__title {
+    text-align: left;
+    text-transform: lowercase;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .about__image {
+    display: none;
+  }
+}

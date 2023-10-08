@@ -6,10 +6,11 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 
   /* Para telas menores que 768px, ajuste a largura do contêiner */
   .container {
     width: 100%;
+    padding: 0 3rem;
   }
 }

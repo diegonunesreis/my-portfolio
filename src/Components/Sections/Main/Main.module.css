@@ -12,9 +12,7 @@
 }
 
 .main h1 {
-  font-size: 4rem;
   margin: 0;
-  font-weight: 600;
 }
 
 .type-writer {
@@ -28,4 +26,12 @@
 
 .main__arrow {
   margin: 10rem 0 0 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .type-writer {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
 }
