@@ -7,6 +7,7 @@ const Experiences = (props) => {
 
   const experiences = [
     {
+      id: 1,
       title: 'software engineer',
       company: 'itaú',
       companyUrl: 'https://www.itau.com.br/',
@@ -15,6 +16,7 @@ const Experiences = (props) => {
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend diam vitae leo iaculis, ut tincidunt tellus auctor. Mauris fringilla quam sit amet nunc iaculis accumsan. In ut dui blandit, dignissim ex eget, elementum turpis. Nam mauris diam, ullamcorper id ligula ac, ultricies viverra libero. Praesent eu tincidunt risus, ac hendrerit lacus. Pellentesque leo est, maximus sed orci ut, tempor consectetur tortor.'
     },
     {
+      id: 2,
       title: 'software engineer',
       company: 'avanade',
       companyUrl: 'https://www.avanade.com/',
@@ -23,6 +25,7 @@ const Experiences = (props) => {
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend diam vitae leo iaculis, ut tincidunt tellus auctor. Mauris fringilla quam sit amet nunc iaculis accumsan. In ut dui blandit, dignissim ex eget, elementum turpis. Nam mauris diam, ullamcorper id ligula ac, ultricies viverra libero. Praesent eu tincidunt risus, ac hendrerit lacus. Pellentesque leo est, maximus sed orci ut, tempor consectetur tortor.'
     },
     {
+      id: 3,
       title: 'junior programming analyst',
       company: 'talent four',
       companyUrl: 'https://www.talentfour.com.br/',
@@ -31,6 +34,7 @@ const Experiences = (props) => {
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend diam vitae leo iaculis, ut tincidunt tellus auctor. Mauris fringilla quam sit amet nunc iaculis accumsan. In ut dui blandit, dignissim ex eget, elementum turpis. Nam mauris diam, ullamcorper id ligula ac, ultricies viverra libero. Praesent eu tincidunt risus, ac hendrerit lacus. Pellentesque leo est, maximus sed orci ut, tempor consectetur tortor.'
     },
     {
+      id: 3,
       title: 'support analyst',
       company: 'cob',
       companyUrl: 'https://cobdesantos.com/',
@@ -50,6 +54,7 @@ const Experiences = (props) => {
               return (
                 <Timeline.Item key={index}>
                   <Experience
+                    key={xp.id}
                     title={xp.title}
                     company={xp.company}
                     companyUrl={xp.companyUrl}

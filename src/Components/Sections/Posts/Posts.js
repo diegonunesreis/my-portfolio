@@ -9,6 +9,7 @@ const Posts = (props) => {
 
   const posts = [
     {
+      id: 1,
       title: 'Angular: Implementando o Reenvio Automático de Requisições com Erro (backoff strategy)',
       likes: 10,
       date: 'Jul 20, 2023',
@@ -16,6 +17,7 @@ const Posts = (props) => {
       url: 'https://blog.diegonunes.dev/angular-implementando-o-reenvio-automatico-de-requisicoes-com-erro'
     },
     {
+      id: 2,
       title: 'Angular: Implementando o Reenvio Automático de Requisições com Erro (backoff strategy)',
       likes: 10,
       date: 'Jul 20, 2023',
@@ -23,6 +25,7 @@ const Posts = (props) => {
       url: 'https://blog.diegonunes.dev/angular-implementando-o-reenvio-automatico-de-requisicoes-com-erro'
     },
     {
+      id: 3,
       title: 'Angular: Implementando o Reenvio Automático de Requisições com Erro (backoff strategy)',
       likes: 10,
       date: 'Jul 20, 2023',
@@ -37,6 +40,7 @@ const Posts = (props) => {
       <div className={styles['grid-container']}>
         {posts.map((post) =>
           <Post
+            key={post.id}
             imgSrc={post.image}
             title={post.title}
             likes={post.likes}

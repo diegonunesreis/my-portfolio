@@ -1,8 +1,9 @@
 .img__container {
   color: var(--primary-color);
   position: relative;
-  width: 350px;
-  height: 350px;
+  max-width: 350px;
+  min-width: 250px;
+  height: auto;
   border-radius: 15px;
   margin: 0;
   overflow: hidden;
