@@ -1,5 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './Main.module.css';
 import { useRef } from 'react';
 import Typed from 'typed.js';

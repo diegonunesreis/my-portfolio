@@ -1,6 +1,5 @@
 import styles from './About.module.css'
 import cabeca from '../../../assets/images/cabeca.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ScrollArrow from '../../UI/ScrollArrow/ScrollArrow';
 
 const About = (props) => {
