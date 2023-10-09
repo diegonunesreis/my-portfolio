@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.696ee3a4.css",
+    "main.js": "/my-portfolio/static/js/main.2a578624.js",
+    "static/media/camaleon.jpg": "/my-portfolio/static/media/camaleon.b5e4272d5ef9301859f5.jpg",
+    "static/media/yellow-door.jpg": "/my-portfolio/static/media/yellow-door.73e5b1cda93121d82221.jpg",
+    "static/media/road.jpg": "/my-portfolio/static/media/road.cb24871a3ad9f830c608.jpg",
+    "static/media/cabeca.png": "/my-portfolio/static/media/cabeca.3981a93eefa953f841e7.png",
+    "index.html": "/my-portfolio/index.html",
+    "main.696ee3a4.css.map": "/my-portfolio/static/css/main.696ee3a4.css.map",
+    "main.2a578624.js.map": "/my-portfolio/static/js/main.2a578624.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.696ee3a4.css",
+    "static/js/main.2a578624.js"
+  ]
+}
