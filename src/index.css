@@ -6,7 +6,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: var(--dark-bg-color);
   scroll-behavior: smooth;
-
 }
 
 code {
@@ -94,4 +93,23 @@ h3 {
     font-size: 24px;
     cursor: pointer;
   }
+
+  .rs-timeline-item-dot::before {
+    transform: scale(1.6);
+  }
+
+  .rs-timeline-item-tail {
+    width: 1px !important;
+  }
 }
+
+@media only screen and (max-width: 576px) {
+  .rs-timeline-item-dot::before {
+    transform: scale(1.6);
+  }
+
+  .rs-timeline-item-tail {
+    width: 1px !important;
+  }
+}
+
