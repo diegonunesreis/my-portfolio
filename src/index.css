@@ -47,6 +47,10 @@ h3 {
   font-size: 1.5rem;
 }
 
+section {
+  padding-top: 1rem;
+}
+
 .scroll-chevron {
   font-size: 40px;
   cursor: pointer;
