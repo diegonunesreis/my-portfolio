@@ -9,7 +9,7 @@ const Navbar = () => {
         <li><a href='#'>&lt;/&gt; nunes</a></li>
       </ul>
       <ul className={styles.social}>
-        <li><a href='mailto:diegonunesreis@outlook.com'>
+        <li><a href='mailto:hey@diegonunes.dev'>
           <FontAwesomeIcon icon="fa-regular fa-envelope" alt='email' />
         </a></li>
         <li>
