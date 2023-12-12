@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <ul className={styles.tabs}>
-        <li><a href='#'>&lt;/&gt; nunes</a></li>
+        <li className={styles.title}>&lt;/&gt; nunes</li>
       </ul>
       <ul className={styles.social}>
         <li><a href='mailto:hey@diegonunes.dev'>

@@ -3,7 +3,12 @@ import styles from './Project.module.css';
 const Project = ({ title, description, languages, url }) => {
   return (
     <div className={styles.container}>
-      <h3 className={styles.title}>&lt;/&gt; {title}</h3>
+      <a href={url}
+        target='_blank'
+        rel='noreferrer'
+        className={styles.title}>
+        &lt;/&gt; {title}
+      </a>
       <div className={styles['grid-container']}>
         <p className={styles['description']}>{description}</p>
         <div className={styles['flex-container']}>

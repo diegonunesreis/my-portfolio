@@ -5,24 +5,24 @@ const Projects = (props) => {
   const projects = [
     {
       id: 1,
-      title: 'lorem ipsum',
-      description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend diam vitae leo iaculis, ut tincidunt tellus auctor. Mauris fringilla quam sit amet nunc iaculis accumsan. Nam mauris diam, ullamcorper id ligula ac, ultricies viverra li...',
-      languages: ['java'],
+      title: 'Github Profile Explorer',
+      description: 'Github Profile Explorer é uma aplicação Angular que possibilita pesquisar perfis de usuários do Github e filtrá-los por nome, quantidade de estrelas, nome de repositório, dentre diversos outros filtros.',
+      languages: ['TypeScript', 'HTML', 'CSS', 'JavaScript'],
       url: 'https://github.com/diegonunesreis/github-profile-explorer'
     },
     {
       id: 2,
-      title: 'lorem ipsum',
-      description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend diam vitae leo iaculis, ut tincidunt tellus auctor. Mauris fringilla quam sit amet nunc iaculis accumsan. Nam mauris diam, ullamcorper id ligula ac, ultricies viverra li...',
-      languages: ['typescript', 'CSS', 'SCSS', 'HTML', 'javascript'],
-      url: 'https://github.com/diegonunesreis/github-profile-explorer'
+      title: 'Running Tools',
+      description: 'O Running Tools App consiste em um conjunto de ferramentas para corredores, como calculadora de ritmo, calculadora de frequência cardíaca alvo, taxa metabólica basal, entre outros recursos.',
+      languages: ['TypeScript', 'HTML', 'CSS', 'JavaScript'],
+      url: 'https://github.com/diegonunesreis/runner-tools'
     },
     {
       id: 3,
-      title: 'lorem ipsum',
-      description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend diam vitae leo iaculis, ut tincidunt tellus auctor. Mauris fringilla quam sit amet nunc iaculis accumsan. Nam mauris diam, ullamcorper id ligula ac, ultricies viverra li...',
-      languages: ['typescript', 'CSS', 'javascript'],
-      url: 'https://github.com/diegonunesreis/github-profile-explorer'
+      title: 'Aprenda Ingles',
+      description: 'Aplicativo Android para ensinar a pronunciar nomes de alguns animais em inglês, além de números de 0 a 9 e vogais.',
+      languages: ['java'],
+      url: 'https://github.com/diegonunesreis/AprendaIngles'
     }
   ]
 
