@@ -3,7 +3,7 @@ import cabeca from '../../../assets/images/cabeca.png'
 import ScrollArrow from '../../UI/ScrollArrow/ScrollArrow';
 
 const About = (props) => {
-  const text = `Oi, sou Diego Nunes Reis, um desenvolvedor com mais de 8 anos de experiência. Atualmente, como Engenheiro de Software no Itaú Unibanco, desempenho um papel fundamental em projetos estratégicos, abrangendo a criação, modernização, manutenção e design de soluções voltadas para a web.
+  const text = `Desenvolvedor de Software com mais de 8 anos de experiência. Atualmente, como Engenheiro de Software no Itaú Unibanco, desempenho um papel fundamental em projetos estratégicos, abrangendo a criação, modernização, manutenção e design de soluções voltadas para a web.
   Comprometido em elevar a qualidade e eficácia dos projetos, minha abordagem inclui as melhores práticas do desenvolvimento de software. Além do meu comprometimento técnico, aprecio música, tenho um carinho especial por animais e estou sempre em busca da xícara perfeita de café.`;
 
   return (
