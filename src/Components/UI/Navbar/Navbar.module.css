@@ -22,6 +22,10 @@
   font-size: 1.875rem;
 }
 
+.nav .title {
+  color: var(--details-color);
+}
+
 @media only screen and (max-width: 768px) {
   .nav {
     margin: 3rem 0;

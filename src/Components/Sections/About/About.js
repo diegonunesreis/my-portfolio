@@ -3,7 +3,8 @@ import cabeca from '../../../assets/images/cabeca.png'
 import ScrollArrow from '../../UI/ScrollArrow/ScrollArrow';
 
 const About = (props) => {
-  const text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend diam vitae leo iaculis, ut tincidunt tellus auctor. Mauris fringilla quam sit amet nunc iaculis accumsan. In ut dui blandit, dignissim ex eget, elementum turpis. Nam mauris diam, ullamcorper id ligula ac, ultricies viverra libero. Praesent eu tincidunt risus, ac hendrerit lacus. Pellentesque leo est, maximus sed orci ut, tempor consectetur tortor. Cras vitae ipsum at ex porta tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor pretium lacus eget finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut porta scelerisque libero, nec imperdiet sapien malesuada eget. Vivamus condimentum tellus lacus, tristique tincidunt eros fringilla finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus.';
+  const text = `Oi, sou Diego Nunes Reis, um desenvolvedor com mais de 8 anos de experiência. Atualmente, como Engenheiro de Software no Itaú Unibanco, desempenho um papel fundamental em projetos estratégicos, abrangendo a criação, modernização, manutenção e design de soluções voltadas para a web.
+  Comprometido em elevar a qualidade e eficácia dos projetos, minha abordagem inclui as melhores práticas do desenvolvimento de software. Além do meu comprometimento técnico, aprecio música, tenho um carinho especial por animais e estou sempre em busca da xícara perfeita de café.`;
 
   return (
     <section id='about'>

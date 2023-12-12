@@ -9,6 +9,8 @@
 .title {
   color: var(--details-color);
   margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .grid-container {
