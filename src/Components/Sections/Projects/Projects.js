@@ -1,42 +1,77 @@
+import { useEffect, useState } from "react";
 import Project from "./Project/Project";
+import githubService from "../../../services/githubService";
 
+const CACHE_EXPIRATION_TIME = 7 * 24 * 60 * 60 * 1000; // Tempo máximo de armazenamento em milissegundos (7 dias)
 
 const Projects = (props) => {
-  const projects = [
-    {
-      id: 1,
-      title: 'Github Profile Explorer',
-      description: 'Github Profile Explorer é uma aplicação Angular que possibilita pesquisar perfis de usuários do Github e filtrá-los por nome, quantidade de estrelas, nome de repositório, dentre diversos outros filtros.',
-      languages: ['TypeScript', 'HTML', 'CSS', 'JavaScript'],
-      url: 'https://github.com/diegonunesreis/github-profile-explorer'
-    },
-    {
-      id: 2,
-      title: 'Running Tools',
-      description: 'O Running Tools App consiste em um conjunto de ferramentas para corredores, como calculadora de ritmo, calculadora de frequência cardíaca alvo, taxa metabólica basal, entre outros recursos.',
-      languages: ['TypeScript', 'HTML', 'CSS', 'JavaScript'],
-      url: 'https://github.com/diegonunesreis/runner-tools'
-    },
-    {
-      id: 3,
-      title: 'Aprenda Ingles',
-      description: 'Aplicativo Android para ensinar a pronunciar nomes de alguns animais em inglês, além de números de 0 a 9 e vogais.',
-      languages: ['java'],
-      url: 'https://github.com/diegonunesreis/AprendaIngles'
+  const [repos, setRepos] = useState([]);
+
+  useEffect(() => {
+    getRepoList();
+  }, []);
+
+  const cachedData = localStorage.getItem('githubRepos');
+
+  const isCacheValid = (timestamp) => {
+    return Date.now() - timestamp < CACHE_EXPIRATION_TIME;
+  };
+
+  const getRepoList = async () => {
+    if (cachedData) {
+      const { data, timestamp } = JSON.parse(cachedData);
+
+      if (isCacheValid(timestamp)) {
+        setRepos(data);
+        return;
+      }
     }
-  ]
+
+    try {
+      const data = await githubService.get('users/diegonunesreis/repos');
+
+      const firstTen = data.sort((a, b) => b.stargazers_count - a.stargazers_count).slice(0, 6);
+
+      const getProjectLanguage = async (projectName) => {
+        return await githubService.get(`repos/diegonunesreis/${projectName}/languages`);
+      }
+
+      const addLanguage = async (obj) => {
+        const result = await getProjectLanguage(obj.name);
+        const languages = Object.keys(result);
+        return { ...obj, languages };
+      };
+
+      const results = await Promise.all(firstTen.map(addLanguage));
+
+      const storageData = {
+        data: results,
+        timestamp: Date.now(),
+      };
+
+      localStorage.setItem('githubRepos', JSON.stringify(storageData));
+
+      setRepos(results);
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   return (
     <section id='projects'>
       <h2>projetos</h2>
-      {projects.map(p =>
-        <Project
-          key={p.id}
-          title={p.title}
-          description={p.description}
-          languages={p.languages}
-          url={p.url}
-        />)}
+      {Array.isArray(repos) && repos.length > 0 ? (
+        repos.map(p => (
+          <Project
+            key={p.id}
+            title={p.name}
+            description={p.description}
+            languages={p.languages}
+            url={p.html_url}
+          />))
+      ) : (
+        <p>Nenhum dado disponivel</p>
+      )}
     </section>
   )
 }
