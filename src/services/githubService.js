@@ -7,7 +7,7 @@ const validateResponse = (response) => {
   }
 }
 
-const gitHubService = {
+const githubService = {
   async get(url, headers = {}) {
     const requestOptions = {
       method: 'GET',
@@ -43,4 +43,4 @@ const gitHubService = {
   },
 };
 
-export default gitHubService;
+export default githubService;

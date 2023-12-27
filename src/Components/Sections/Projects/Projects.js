@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Project from "./Project/Project";
-import gitHubService from "../../../services/gitHubService";
+import githubService from "../../../services/githubService";
 
 const CACHE_EXPIRATION_TIME = 7 * 24 * 60 * 60 * 1000; // Tempo máximo de armazenamento em milissegundos (7 dias)
 
@@ -29,12 +29,12 @@ const Projects = (props) => {
     }
 
     try {
-      const data = await gitHubService.get('users/diegonunesreis/repos');
+      const data = await githubService.get('users/diegonunesreis/repos');
 
       const firstTen = data.sort((a, b) => b.stargazers_count - a.stargazers_count).slice(0, 6);
 
       const getProjectLanguage = async (projectName) => {
-        return await gitHubService.get(`repos/diegonunesreis/${projectName}/languages`);
+        return await githubService.get(`repos/diegonunesreis/${projectName}/languages`);
       }
 
       const addLanguage = async (obj) => {
