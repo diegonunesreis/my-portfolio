@@ -11,13 +11,14 @@ const Projects = (props) => {
     getRepoList();
   }, []);
 
-  const cachedData = localStorage.getItem('githubRepos');
 
   const isCacheValid = (timestamp) => {
     return Date.now() - timestamp < CACHE_EXPIRATION_TIME;
   };
 
   const getRepoList = async () => {
+    const cachedData = localStorage.getItem('githubRepos');
+
     if (cachedData) {
       const { data, timestamp } = JSON.parse(cachedData);
 
